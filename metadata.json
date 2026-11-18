@@ -1,0 +1,6 @@
+{
+  "name": "Arddoia",
+  "description": "Kotlin + Jetpack Compose habit tracker (com.ar.arddoia) with interactive Today, Habits, and Stats preview.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
