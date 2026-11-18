@@ -6,6 +6,8 @@ import appBuildGradle from '../../android/app/build.gradle.kts?raw';
 import manifestXml from '../../android/app/src/main/AndroidManifest.xml?raw';
 import stringsXml from '../../android/app/src/main/res/values/strings.xml?raw';
 import themesXml from '../../android/app/src/main/res/values/themes.xml?raw';
+import keystoreExample from '../../android/keystore.properties.example?raw';
+import androidGitignore from '../../android/.gitignore?raw';
 import arddoiaAppKt from '../../android/app/src/main/java/com/ar/arddoia/ArddoiaApp.kt?raw';
 import mainActivityKt from '../../android/app/src/main/java/com/ar/arddoia/MainActivity.kt?raw';
 import habitModelsKt from '../../android/app/src/main/java/com/ar/arddoia/data/model/HabitModels.kt?raw';
@@ -175,5 +177,19 @@ export const ANDROID_SOURCE_FILES: AndroidSourceFile[] = [
     group: 'Gradle & Manifest',
     language: 'xml',
     content: themesXml,
+  },
+  {
+    path: 'keystore.properties.example',
+    name: 'keystore.properties.example',
+    group: 'Gradle & Manifest',
+    language: 'toml',
+    content: keystoreExample,
+  },
+  {
+    path: '.gitignore',
+    name: '.gitignore',
+    group: 'Gradle & Manifest',
+    language: 'toml',
+    content: androidGitignore,
   },
 ];
