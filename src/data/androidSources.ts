@@ -1,6 +1,7 @@
 import settingsGradle from '../../android/settings.gradle.kts?raw';
 import rootBuildGradle from '../../android/build.gradle.kts?raw';
 import gradleProperties from '../../android/gradle.properties?raw';
+import gradleWrapperProps from '../../android/gradle/wrapper/gradle-wrapper.properties?raw';
 import libsVersions from '../../android/gradle/libs.versions.toml?raw';
 import appBuildGradle from '../../android/app/build.gradle.kts?raw';
 import manifestXml from '../../android/app/src/main/AndroidManifest.xml?raw';
@@ -163,6 +164,13 @@ export const ANDROID_SOURCE_FILES: AndroidSourceFile[] = [
     group: 'Gradle & Manifest',
     language: 'toml',
     content: gradleProperties,
+  },
+  {
+    path: 'gradle/wrapper/gradle-wrapper.properties',
+    name: 'gradle-wrapper.properties',
+    group: 'Gradle & Manifest',
+    language: 'toml',
+    content: gradleWrapperProps,
   },
   {
     path: 'app/src/main/res/values/strings.xml',
